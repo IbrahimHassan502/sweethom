@@ -1,0 +1,75 @@
+.land-page{
+    height: 105vh;
+    width: 100vw;
+    position: relative;
+    padding: 0;
+}
+@media screen and (max-width: 860px) {
+    .land-page {height:85vh;}
+}
+@media screen and (max-width: 660px) {
+    .land-page {height:65vh;}
+}
+@media screen and (max-width: 470px) {
+    .land-page {height:50vh;}
+}
+.land-page .shadow {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    left:0;
+    bottom:0;
+    background: linear-gradient(to top, #ffffff80, transparent);
+    z-index: 9
+}
+
+.land-page .heading-box {
+    opacity:0;
+    transition: all .1s linear;
+    position: absolute;
+    left: 50%;
+    top: -10%;
+    transform: translate(-50%, 0);
+    width: 100%;
+}
+.land-page h2, .land-page h6 {
+    text-transform: capitalize;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 6vw;
+    color:#e4b364
+}
+@media screen and (max-width: 991px){
+    .land-page h2 {font-size: 5em;}
+}
+@media screen and (max-width: 575px){
+    .land-page h2 {font-size: 3em;}
+}
+
+.land-page h6 {font-size: 2.8vw;color: #83b959;margin-bottom:0;}
+@media screen and (min-width: 768px){
+    .land-page h6 {margin-bottom: -0.5rem;}
+}
+@media screen and (min-width: 992px){
+    .land-page h6 {margin-bottom: -0.8rem;}
+}
+.land-page .img-box {
+    transition: all .1s linear;
+    width:100%;
+    position: absolute;
+    bottom:5%;
+    left:0
+}
+
+@media screen and (max-width: 400px){
+    .land-page .img-box {
+        bottom: 15%;
+    }
+}
+
+.land-page img {
+    position: absolute;
+    bottom: 13%;
+    opacity:0
+}
