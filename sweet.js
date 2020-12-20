@@ -4,7 +4,7 @@
 /*eslint no-console: off */
  /*eslint no-unused-vars: off, no-unused-labels: off*/
 
-$(function () { 'use strict';
+$(window).on('load', function (){ 
     
     let navbarButton = $('.nav-button'),
     sections = $('section'),
